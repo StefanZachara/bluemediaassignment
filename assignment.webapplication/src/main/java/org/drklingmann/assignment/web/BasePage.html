@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DrKlingmann Assignment</title>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="css/blitzer/jquery-ui-1.10.0.custom.css" />
+<link rel="stylesheet" type="text/css" href="css/qtip/jquery.qtip.min.css" />
+<link rel="stylesheet" type="text/css" href="css/kendo/kendo.common.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/kendo/kendo.default.min.css" media="all" />
+<script type="text/javascript" src="js/jquery-1.9.0.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.0.custom.js"></script>
+<script type="text/javascript" src="js/qtip/jquery.qtip.min.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+    	<h1><a href="/">Assignment</a></h1>
+        <h2>simple application assignment site</h2>
+        <div class="clear"></div>
+    </div>
+    
+    <div id="body">
+		<div id="content">
+		    <!-- CONTENT -->
+		 
+		    <wicket:child/>
+		 
+		    <!-- END CONTENT -->         
+        </div>
+        
+        <div class="sidebar">
+            <ul>	
+            	<li>
+            		<h4>New application</h4>
+            		<ul>
+                    <li><a href="#" wicket:id="newApplication">Create an application</a></li>
+                    </ul>
+            	</li>
+            	
+            	<li>
+            		<h4>Filter</h4>
+ 						<form wicket:id="filterForm">
+				            <ul>
+							<li>Name: <input wicket:id="name" type="text" size="31"></input></li>
+							<li>
+							State:<select wicket:id="state" name="state">
+									<option value="rare">Rare</option>
+									<option value="common">Common</option>
+								</select></li>
+							<li><button type="submit">Search</button></li>
+							</ul>
+						</form>
+            	</li>
+               <li>
+                    <h4>Navigation</h4>
+					                    
+                     <ul class="blocklist">
+                        <li><a href="#" wicket:id="created">Created</a></li>
+                        <li><a href="#" wicket:id="accepted">Accepted</a></li>
+                        <li><a href="#" wicket:id="verified">Verified</a></li>
+                        <li><a href="#" wicket:id="published">Published</a></li>
+                        <li><a href="#" wicket:id="deleted">Deleted</a></li>
+                        <li><a href="#" wicket:id="rejected">Rejected</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li>
+                    <h4>About</h4>
+                    <ul>
+                        <li>
+                        	<p style="margin: 0;">Simple application assignment site.</p>
+                        </li>
+                    </ul>
+                </li>
+                                
+            </ul> 
+        </div>
+    	<div class="clear"></div>
+    </div>
+</div>
+<div id="footer">
+    <div class="footer-content">
+        <p>&copy; DrKlingmann 2015. Design by <a href="http://www.spyka.net">Free CSS Templates</a> | <a href="http://www.justfreetemplates.com">Free Web Templates</a></p>
+    </div>
+</div>
+</body>
+</html>

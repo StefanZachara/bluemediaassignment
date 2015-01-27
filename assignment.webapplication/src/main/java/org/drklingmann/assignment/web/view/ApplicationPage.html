@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+	<wicket:head>
+		<title>Assignment v0.1</title>
+		<style type="text/css">
+			.ui-autocomplete {
+				max-height: 200px;
+				overflow-y: auto;
+				overflow-x: hidden;
+				padding-right: 20px;
+			}	
+		</style>
+    </wicket:head>
+</head>
+<body>
+	<wicket:extend>
+          <form wicket:id="appForm">
+            <ul>
+			<li>Name: <input wicket:id="name" type="text" size="31"></input></li>
+			<li>Content: <input wicket:id="content" type="text" size="63"></input></li>
+			<!-- <li>
+			State:<select wicket:id="state" name="state">
+					<option value="rare">Rare</option>
+					<option value="common">Common</option>
+				</select></li> -->
+			<wicket:enclosure>
+			<li><input type="submit" wicket:id="submitButton" value="text"/></li>
+			</wicket:enclosure>
+			<wicket:enclosure>
+			<li>Reason: <input wicket:id="rejectionReason" type="text" size="63"></input></li>
+			</wicket:enclosure>
+			<wicket:enclosure>
+			<li><input type="submit" wicket:id="rejectButton" value="text"/></li>
+			</wicket:enclosure>
+			<div wicket:id="feedback" style="widtch: 360px;"></div>
+			</ul>
+		</form>
+		
+		<wicket:fragment wicket:id="historyList">Panel z lista</wicket:fragment>
+	</wicket:extend>
+</body>
+</html>
