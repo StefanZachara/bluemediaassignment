@@ -4,7 +4,7 @@
 <body>
 	<wicket:panel>
 	
-		<table><tbody>
+		<table wicket:id="data"><tbody>
 			<tr>
 				<th>Application</th>
 				<th>State</th>
@@ -19,7 +19,13 @@
 						</form>
 					</td>
 			</tr>
-		</tbody></table>
+		</tbody>        
+		<tfoot>
+            <tr>
+                <td wicket:id="navigator"></td>
+            </tr>
+        </tfoot>
+        </table>
 	
 	</wicket:panel>
 </body>

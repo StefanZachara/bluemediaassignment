@@ -4,7 +4,7 @@ import java.util.List;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.list.ListItem;
-import org.apache.wicket.markup.html.list.ListView;
+import org.apache.wicket.markup.html.list.PageableListView;
 import org.apache.wicket.model.Model;
 import org.drklingmann.assignment.domain.entities.ApplicationEntity;
 import org.drklingmann.assignment.web.view.ApplicationPage;
@@ -12,12 +12,12 @@ import org.drklingmann.assignment.web.view.ApplicationPage;
 import com.googlecode.wicket.jquery.ui.form.button.Button;
 
 
-public class ApplicationListView extends ListView<ApplicationEntity> {
+public class ApplicationListView extends PageableListView<ApplicationEntity> {
 
 	private static final long serialVersionUID = -2340984929583551212L;
 
 	public ApplicationListView(String id, List<? extends ApplicationEntity> list) {
-		super(id, list);
+		super(id, list, 10);
 	}
 
 	@Override
