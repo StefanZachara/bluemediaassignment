@@ -5,5 +5,5 @@ Trzeba zmienic dane bazy: jdbc.properties ewentualnie persistence.xml
 
 Do dodania:
 - paginacja (zrobione)
-- testy!!
+- testy (zrobione testy na duze pokrycie)
 - obsluga wyjatkow..
